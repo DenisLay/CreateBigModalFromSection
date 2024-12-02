@@ -55,3 +55,7 @@ section {
     margin-left: 600px;
     background-color: orange;
 }
+
+.modal-inner-unvisible {
+    display: none;
+}
