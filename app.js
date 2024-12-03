@@ -21,12 +21,11 @@ window.onload = () => {
 
 function openModal(root, item) {
     const modal = document.createElement('div');
-<<<<<<< HEAD
+
     const modalInner = document.querySelector('.modal-inner-unvisible');
     const modalTitle = modalInner.querySelector('.modal-title');
     const modalContent = modalInner.querySelector('.modal-content');
-=======
->>>>>>> origin/main
+
     modal.classList.add('modal');
 
     rects = item.getClientRects()[0];
@@ -45,7 +44,6 @@ function openModal(root, item) {
         left: modal.style.left
     };
 
-<<<<<<< HEAD
     /*Array.from(item.children).forEach(child => {
         const clone = child.cloneNode(true);
         modal.appendChild(clone);
@@ -65,14 +63,14 @@ function openModal(root, item) {
 
     modal.appendChild(title);
     modal.appendChild(content);
-=======
+
     Array.from(item.children).forEach(child => {
         const clone = child.cloneNode(true);
         modal.appendChild(clone);
     });
 
     root.appendChild(modal);
->>>>>>> origin/main
+
 
     modal.style.top = (0 + window.scrollY) + 'px';
     modal.style.left = '0px';
